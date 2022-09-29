@@ -10,5 +10,9 @@ def hello():
 def ciao():
     return '<h1>Ciao!</h1>'
 
+@app.route('/aso')
+def aso():
+    return '<h1>あ、そう!</h1>'
+
 if __name__=='__main__':
     app.run(debug=True)
