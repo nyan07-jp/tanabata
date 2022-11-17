@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Input</title>
+  <style>
+    p {
+      color:red;
+    }
+  </style>
+</head>
+<body>
+	<h1>Input</h1>
+	<hr>
+	<form action="/input_app" method="POST">
+		ID: <input type="text" name="id">
+		パスワード: <input type="password" name="pwd"><br>
+    <p>住所</p>  
+    神奈川<input type="radio" name="address" value="Kanagawa">
+    東京<input type="radio" name="address" value="Tokyo"><br>
+    <p>好きなもの</p>
+    <select name="favorite">
+      <option value="">好きなものを選んでください</option>
+      <option value="cat">ねこ</option>
+      <option value="dog">いぬ</option>
+      <option value="fried chicken">唐揚げ</option>
+      <option value="chicken wings">手羽先</option>
+      <option value="octopus wasabi">たこわさび</option>
+    </select>
+    <hr>
+    <input type="submit" value="OK"> 
+	</form>
+  
+</body>
+</html>
